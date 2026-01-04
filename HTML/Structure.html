@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/Design.css">
+        <title>Tic-Tac-Toe</title>
+    </head>
+    <body>
+        <div class="app">
+            <div id="welcome-screen" class="screen active">
+                <h1>Welcome to Tic-Tac-Toe!</h1>
+                <button id="start-button">Start Game</button>
+            </div>
+            <div id="choice-screen" class="screen">
+                <h2>Choose Your Symbol!</h2>
+                <button class="choice-button" value="X">X</button>
+                <button class="choice-button" value="O">O</button>
+            </div>
+            <div id="game-screen" class="screen">
+                <h1>Tic-Tac-Toe</h1>
+                <h3 id="current-player"></h3>
+                <div id="board">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+                </div>
+                <button id="reset-button">Reset Game</button>
+            </div>
+            <div id="winning-screen" class="screen">
+                <h1 id="winning-message"></h1>
+                <button class="play-again-button">Play Again</button>
+            </div>
+            <div id="draw-screen" class="screen">
+                <h1>Its a Draw!</h1>
+                <button class="play-again-button">Play Again</button>
+            </div>
+        </div>
+        <script src="../JS/Functionality.js"></script>
+    </body>
+</html>
